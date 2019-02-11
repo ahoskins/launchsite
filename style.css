@@ -34,14 +34,14 @@ body {
   }
 
 .cta {
-    margin: 0 auto;
+    margin: 1em auto;
     width: 500px;
     text-align: center;
     font-size: 30px;
     font-family: myFirstFont;
 }
 
-.cta-submit {
+/* .cta-submit {
     background-color: #0693cd;
     border: 0;
     border-radius: 5px;
@@ -52,19 +52,47 @@ body {
     line-height: 1;
     padding: 10px;
     width: 150px;
-}
+} */
 
-.cta-input {
+a.cta-input {
     line-height: 1;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.35em 1.2em;
+    border-radius:0.12em;
     border: 0.5px;
     border-style: solid;
+    box-sizing: border-box;
+}
+
+a.cta-submit {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.cta-submit:hover {
+  color:#000000;
+  background-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+  a.cta-submit {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
 
 .underline-area {
     border-bottom: 2px solid #404040;
-    margin: 0px 40px;
+    margin: 0px 30px;
+    padding-bottom: 50px;
 }
 
 .no-wrap-word {
