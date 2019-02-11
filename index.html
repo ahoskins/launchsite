@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Take a walk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssans.min.css">  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -9,26 +10,28 @@
     <script src="main.js"></script> 
   </head>
   <body>
-    <div class="sun">
-      <div class="beams"></div>
-      <div class="face">
-        <span class="eye eye-left"></span>
-        <span class="eye eye-right"></span>
-        <span class="mouth"></span>
+    <div class="sun-wrapper">
+      <div class="sun">
+        <div class="beams"></div>
+        <div class="face">
+          <span class="eye eye-left"></span>
+          <span class="eye eye-right"></span>
+          <span class="mouth"></span>
+        </div>
       </div>
     </div>
     <div class="main-title">
-      <div class="cssans--center">
-        <div class="cssans__word">
+      <div class="cssans--center underline-area">
+        <div class="cssans__word no-wrap-word">
           <b class="cssans:T"></b>
           <b class="cssans:A"></b>
           <b class="cssans:K"></b>
           <b class="cssans:E"></b>
         </div>
-        <div class="cssans__word">
+        <div class="cssans__word no-wrap-word">
           <b class="cssans:A"></b>
         </div>
-        <div class="cssans__word">
+        <div class="cssans__word no-wrap-word">
           <b class="cssans:W"></b>
           <b class="cssans:A"></b>
           <b class="cssans:L"></b>
@@ -36,7 +39,7 @@
         </div>
       </div>
       <div class="cta">
-        Text 415-212-4422 to get started. <input class="cta-input" type="text" name="phone-number"> <button class="cta-submit" type="button">Text me</button>
+        <input class="cta-input" type="text" name="phone-number"> <button class="cta-submit" type="button">Get started</button>
       </div>
     </div>
   </body>

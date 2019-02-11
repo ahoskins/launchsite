@@ -1,7 +1,10 @@
 body {
     --cssans-word-spacing: 1.5em;
     background-color: #FFF3E0;
-  }
+    height: 100vh;
+    margin: 0px;
+}
+
 .main-title {
     font-size: 45px;
     width: 100vw;
@@ -13,6 +16,17 @@ body {
     right: 0;
     margin: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .main-title {
+      font-size: 30px;
+      position: relative;
+    }
+    .sun {
+        display: none;
+    }
+  }
 
 @font-face {
     font-family: myFirstFont;
@@ -37,7 +51,7 @@ body {
     font-weight: bold;
     line-height: 1;
     padding: 10px;
-    width: 80px
+    width: 150px;
 }
 
 .cta-input {
@@ -48,13 +62,28 @@ body {
     border-style: solid;
 }
 
+.underline-area {
+    border-bottom: 2px solid #404040;
+    margin: 0px 40px;
+}
+
+.no-wrap-word {
+    white-space: nowrap;
+}
+
+.sun-wrapper {
+    padding-left: 75px;
+    padding-top: 75px;
+}
+
 .sun {
     width: 150px;
     height: 150px;
-    margin: 75px;
     background: #f5df67;
     border-radius: 50%;
     position: relative;
+    /* padding-left: 75px; */
+    /* padding-top: 75px; */
   }
   .sun .face {
     position: absolute;
@@ -133,4 +162,5 @@ body {
       transform: translateX(-45%);
     }
   }
+
   
