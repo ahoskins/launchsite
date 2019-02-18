@@ -1,8 +1,9 @@
 body {
     --cssans-word-spacing: 1.5em;
-    background-color: #FFF3E0;
+    background-color: #ADD8E6;
     height: 100vh;
     margin: 0px;
+    font-family: myFirstFont;    
 }
 
 .main-title {
@@ -11,22 +12,41 @@ body {
     height: 100px;
     position: absolute;
     top:0;
-    bottom: 0;
+    bottom: 40%;
     left: 0;
     right: 0;
     margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .main-title {
-      font-size: 30px;
-      position: relative;
-    }
-    .sun {
-        display: none;
-    }
+.description {
+  font-size: 25px;
+  margin-left: 30%;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-title {
+    font-size: 30px;
+    position: relative;
   }
+  .sun {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .sun-wrapper {
+    padding-left: 0px !important;
+  }
+  .main-title {
+    position: static;
+  }
+  #submit-button {
+    display: none !important;
+  }
+  a.cta-submit{
+    display: inline !important;
+  }
+}
 
 @font-face {
     font-family: myFirstFont;
@@ -75,6 +95,9 @@ a.cta-submit {
   color:#FFFFFF;
   text-align:center;
   transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 25px;
+  display: none;
 }
 
 a.cta-submit:hover {
@@ -89,10 +112,60 @@ a.cta-submit:hover {
   }
 }
 
+.signup {
+  margin-left: 30%;
+  margin-top: 20px;
+  position: relative;
+  line-height: 1.25;
+  font-size: 25px;
+}
+
+.signup-input {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  outline: 0;
+  background-color: #ADD8E6;  
+  font-size: 25px;
+}
+
+.signup-input::placeholder {
+  color: rgba(0, 0, 0, 0.123);
+}
+
+.signup-label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+}
+
+#submit-button {
+  position: absolute;
+  top: 35%;
+  right: 30%;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border: solid black;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.2s;  
+}
+
+#submit-button:hover {
+  border-color: #FFFFFF;
+}
+
 .underline-area {
     border-bottom: 2px solid #404040;
     margin: 0px 30px;
     padding-bottom: 50px;
+}
+
+#swapping {
+  font-weight: bold;
 }
 
 .no-wrap-word {

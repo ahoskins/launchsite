@@ -47,4 +47,14 @@ class Sun {
             }
         })
     })
+
+    let options = ['stay relaxed', 'meet people', 'get tanned', 'work on your butt', 'get coffee'];
+    let currentOption = 0;
+    setInterval(function() {
+        currentOption += 1;
+        if (currentOption === options.length) {
+            currentOption = 0;
+        }
+        $('#swapping').text(options[currentOption])
+    }, 3000);
   });
